@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 박스나열</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+		hr{position:static;margin:50px 0;left:0;}
+		.study>li{float:left;width:200px;height:100px;line-height:100px;text-align:center;border:1px solid black;box-sizing:border-box;}
+		.study>li:first-child{background-color:red;}
+		.study>li:nth-child(2){background-color:yellow;}
+		.study>li:nth-child(3){background-color:indigo;}
+		.study>li:last-child{background-color:olivedrab;}
+		.study+.clearfix{clear:both}
+		hr+.clearfix{clear:both}
+		
+		.subject:after{display:block;clear:both;content:"";}
+		.subject>li{float:left;width:200px;height:100px;line-height:100px;text-align:center;border:1px solid red;box-sizing:border-box;}
+		.subject>li:first-child{background-color:rosybrown}
+		.subject>li:nth-child(2){background-color:aquamarine}
+		.subject>li:nth-child(3){background-color:cornflowerblue}
+		.subject>li:last-child{background-color: darkgoldenrod}
+		
+		.test>span{display:inline-block;float:left;width:100px;height:100px;line-height:100px;text-align:center;}
+		.test>.red{background-color: red}
+		.test>.blue{background-color: blue}
+		.test>.yellow{background-color: yellow}
+		.test>.green{background-color: green}
+		.test>.pink{background-color: pink}
+		
+		.test{*zoom:1;}/*구형 ie 브라워에서 아래의 :after가상선택자 구문을 인식하게 하는 코드. 'CSS핵' 이라고 불리운다.*/
+		.test:after{display:block;clear:both;content:"";}
+	 </style>
+</head>
+
+<body>
+<div id="wrap">
+	<h1 class="text-center">float을 이용한 박스나열</h1>
+	<ul class="study">
+		<li>HTML5</li>
+		<li>CSS</li>
+		<li>JAVAscript</li>
+		<li>JQuery</li>
+	</ul>
+	<div class="clearfix"></div>
+	<!--
+		1.float의 '끌어당기는 영향력'을 차단시키는 마감재역할.
+		2.float의 영향을 차단시키는 마감재 사용은 필수.
+	-->
+	<p>안녕</p>
+	<hr />
+	<ol class="subject">
+		<li>UI/UX</li>
+		<li>포토샵</li>
+		<li>일러스트</li>
+		<li>포트폴리오</li>
+	</ol>
+	<p>추천과목</p>
+	<p>인기과목</p>
+	<hr />
+	<!--문제 : 가상선택자를 이용하여 float을 완성하시오.-->
+	<p class="test">
+		<span class="red">red</span>
+		<span class="blue">blue</span>
+		<span class="yellow">yellow</span>
+		<span class="green">green</span>
+		<span class="pink">pink</span>
+	</p>
+	<p>float test</p>
+</div>
+</body>
+
+</html>

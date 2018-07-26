@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>float을 감싸는 레이아웃</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+		*{margin:0;padding:0;font-size:16px;}
+		#wrap{width:700px;margin:0 auto;}
+		h1{width:698px;height:150px;margin:30px 0 10px;font-weight:400;line-height:150px;text-align: center;border:1px solid black;}
+		section:after{display:block;clear:both;content:""}
+		.left{float:left;width:250px;height:400px;margin-right:10px;line-height:400px;text-align:center;border:1px solid black;}
+		.cont{float:right;width:436px;height:400px;line-height:400px;text-align:center;border:1px solid black;}
+		footer{height:100px;margin-top:10px;line-height:100px;text-align: center;border:1px solid black;}
+		footer>address{font-style:normal;}
+	 </style>
+</head>
+
+<body>
+<div id="wrap">
+	<header>
+		<h1>메인메뉴영역</h1>
+	</header>
+	<section>
+		<article class="left">서브메뉴</article>
+		<article class="cont">본문내용</article>
+	</section>
+	<footer>
+		<address>&copy;Designed by 강지은 </address>
+	</footer>
+</div>
+</body>
+
+</html>

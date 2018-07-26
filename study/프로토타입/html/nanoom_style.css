@@ -1,0 +1,41 @@
+		#wrap{width:1200px;margin:0 auto;font-size:14px;}
+		mark{background-color:yellowgreen;border-radius:20px;}
+
+		.login{width:900px;margin:0 auto;;*zoom:1;}
+		.login:after{display:block;clear:both;content:"";}
+		.login>p{float:right;width:100px;height:20px;margin:30px 5px 20px;line-height:20px;text-align:center;border:1px solid black;}
+		.login>p:hover{background-color:green;}
+		.login>p>a:hover{color:white;}
+		.menu{width:900px;margin:0 auto;}
+		.menu>ul{;*zoom:1;}
+		.menu>ul:after{display:block;clear:both;content:""}
+		.menu>ul>li{float:left;width:140px;height:50px;margin-right:9.6px;line-height:50px;text-align:center;border:1px solid black;}
+		.menu>ul>li:nth-child(5){color:white;font-weight:800;background-color:green;}
+		.menu>ul>li:nth-child(5)>a{color:white;	}
+		.menu>ul>li:last-child{margin:0}	
+		.lnb{width:898px;margin:5px auto;border:1px solid green;}
+		.lnb>ul{*zoom:1;}
+		.lnb>ul:after{display:block;clear:both;content:""}
+		.lnb>ul>li{float:left;height:50px;margin:0 20px;font-size:1.2em;line-height:50px;text-align:center;}
+		.lnb>ul>li:nth-child(2)>a{color:green;font-weight:800;}
+		.srch{width:900px;margin:0 auto;}
+		.srch>ul{width:898px;height:30px;margin:10px auto;line-height:30px;text-align:center;border:1px solid green;*zoom:1;}
+		.srch>ul:after{display:block;clear:both;content:""}
+		.srch>ul>li{float:left;margin-left:1px;text-align:center;border:1px solid black;}
+		.srch>ul>li:first-child{width:200px;margin-left:0}
+		.srch>ul>li:nth-child(2){width:600px;}
+		.srch>ul>li:last-child{width:90px}table{width:898px;margin:0 auto;border-collapse: collapse;}
+		.table>ul{width:898px;margin:40px auto 20px;*zoom:1;}
+		.table>ul:after{display:block;clear:both;content:""}
+		.table>ul>li{float:right;margin-right:10px;padding:10px 12px;font-size:15px;border:1px solid lightgray;}
+		.table>ul>li:first-child{float:left;font-weight:800;font-size:50px;border:none;}
+		.table>ul>li:nth-child(2){margin:0}
+		.table tr{height:150px;line-height:150px;border-bottom:1px solid lightgray;}
+		.table tr:first-child{height:50px;line-height:50px}
+		.table th{margin:0 5px;font-weight:800;font-size:15px;}
+		.table td{overflow:hidden;height:50px;margin:0 5px;font-size:12px;vertical-align: middle;text-align:center;}
+		.table td>p{overflow:hidden;width:148px;height:150px;margin:0 auto;}
+		.table td:nth-child(3){font-size:13px;}
+		.table td>a{color:black;}
+		.table td>a:visited{color:gray;}
+.table>ul.top>li{font-weight:800;font-size:15px;border:none;}

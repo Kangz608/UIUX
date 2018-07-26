@@ -1,0 +1,19 @@
+@charset "utf-8"
+
+*{margin:0;padding:0;}
+#wrap{width:960px;margin:30px auto 0;font-weight:800;font-size:2em;text-align:center;}
+/*text관련한 속성은 자손에게 상속된다.*/
+header,.lnb,.ad,.cont,footer{border-radius:10px;}
+header{height:100px;background-color:gray;}
+section{margin:10px 0;*zoom:1;}
+section:after{display:block;clear:both;content:""}
+/*clear:both - 반드시 block속성에서만 적용됨. 플롯의 영향력을 차단함. 가상선택자 :after,:before은 반드시 content속성이 필요*/
+.left{float:left;width:200px;}
+.left>.lnb{height:250px;margin-bottom:10px;background-color:blue;}
+.left>.ad{height:140px;background-color:pink;}
+.cont{float:right;width:750px;height:400px;background-color:yellow;}
+footer{height:100px;background-color:brown;}
+
+/*반응형 모바일 767px이하*/
+@media screen and (max-width:768px){#wrap{width:100%;margin:0}section>.left{float:none;width:100%;}
+section>.cont{float:none;width:100%;margin-top:10px;}}

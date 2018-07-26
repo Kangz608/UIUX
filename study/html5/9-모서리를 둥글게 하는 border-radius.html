@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>BORDER RADIUS</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+		/*id명이 wrap인 div선택자*/
+		div#wrap{border:1px solid black;}
+		/*text-align:center : 상자안에 있는 글자를 가운데 정렬.*/
+		#wrap>h1{width:400px;height:200px;border:10px solid rosybrown;text-align:center;line-height:200px;border-radius:50px}
+		/*
+		id명 wrap이 붙어있는 모든 요소의 직계자식인 h1
+		한 문장의 line-height(줄간격)와 height(높이)값을 같게 설정하면 mid(세로중앙)에 온다.
+		text-align,line-height로 가세정렬!
+		*/
+		h1+p{width:100px;height:100px;border:5px solid lightcoral;text-align:center;line-height:100px;border-top-left-radius:20px;border-top-right-radius:30px; border-bottom-right-radius:20px;}
+		mark{background-color:lightpink;border-radius: 30px;}
+		p.ball{width:150px;height:150px;background-color: #ff0;text-align:center;line-height:130px;border-radius:75px;border:10px solid green;box-sizing:border-box}
+		/*
+		border를 주면 박스형태가 커짐 : 아웃라인으로 테두리가 생기기 때문.
+		box-sizing:border-box -> border가 박스의 안쪽으로 생성.
+			
+		border 기본으로 생성 : 아웃라인임을 고려하여 border-radius값을 설정.
+		box-sizing:border-box를 이용하여 안쪽으로 border생성 : 인라인임을 고려하여 line-height값을 설정.
+		*/
+	 </style>
+</head>
+
+<body>
+	<!--
+		id는 이름 앞에 #표시.
+		절대 중복사용 금지. : 만약 id값이 두개 이상 있을 경우, 제어할 대상을 찾지 못해 첫번째 요소만 처리하기 때문.
+		
+		**id의 사용처 : 
+		1)레이아웃 담당하는 요소에 사용.
+		2)동적인 움직임을 표현하기 위한 자바스크립트와 연동할 때 사용.
+		*)나머지 요소들은 class와 tag선택자를 이용해서 접근하길 권장.
+	-->
+<div id="wrap">
+	<h1><mark>border-radius 학습</mark></h1>
+	<p>사각형</p>
+	<hr>
+	<div>
+		<p class="ball">H</p>
+		<p class="ball">T</p>
+		<p class="ball">M</p>
+		<p class="ball">L</p>
+		<p class="ball">5</p>
+	</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>부모를 기준으로 한 위치지정</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+		.parent{position:relative;width:400px;height:400px;margin:100px 0 0 100px;background-color:yellow;}
+		.parent>.child{position:absolute;left:100px;top:100px;width:100px;height:100px;line-height:100px;text-align:center;background-color:mediumseagreen;}
+		/*
+			pos:r 의 주 용도
+			1) 해당요소의 이동이 주 목적이 아니다.
+			2) absoulte할 요소의 기준점으로 설정하는 것이 주 용도.
+			3) body가 아닌 새로운 기준점을 잡아 이동하게 만든다.
+		*/
+	</style>
+</head>
+
+<body>
+	<div class="parent">
+		<p class="child">자식</p>
+	</div>
+</body>
+
+</html>

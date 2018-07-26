@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>블럭요소와 인라인요소의 특징</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+		*{margin:0;padding:0;}
+		h1,span{border:1px solid blue;background-color:yellow;width:400px;height:200px;} /*,(콤마)는 그룹선택자*/
+		p{width:200px;background-color:red;}
+		div{color:blue;background-color:orange;width:80px;height:20px;}/*height을 정해주면 overflow현상이 일어난다.*/
+		div~span{background-color:green;border:1px solid red;}
+		hr~p{display:inline-block;width:100px;height:100px;line-height:100px;text-align:center;border-radius:20px;border:1px solid gray;box-sizing:border-box;}
+		p.box1{background-color:rosybrown;}
+		p.box2{background-color:lightpink;}
+	 </style>
+</head>
+
+<body>
+
+	<h1>나는 블럭요소 h1</h1>
+	<span>나는 인라인요소 span</span>
+	<p>나는 블럭요소 p</p>
+	<div>나는 블럭요소 div</div>
+	
+	<span>나는 인라인요소 span-1</span>
+	<span>나는 인라인요소 span-2</span>
+	<span>나는 인라인요소 span-3</span>
+	<span>나는 인라인요소 span-4</span>
+	<span>나는 인라인요소 span-5</span>
+	
+	<hr>
+	
+	<h2>요소간의 줄바꿈은 한 칸 공백으로 인식된다.</h2>
+	
+	<p class="box1">박스1</p>
+	<p class="box2">박스2</p>
+	<p class="box1">박스1</p><p class="box2">박스2</p>
+	  
+	<!--
+		1. HTML의 모든 태그는 block 아니면 inline이다.
+		
+		2. block요소[{display:block;}]의 특징 
+			- 지배영역이 컨텐츠 양에 관계없이 한 줄 전체이다.
+			- 자동 줄 바꿈 처리가 된다.
+			- width,height가 적용된다.
+			- 기본적으로 width값은 부모크기와 같다.
+			
+		3. inline요소[{display:inline;}]의 특징
+			- 지배영역이 컨텐츠 양만큼이다 .
+			- 인라인 요소 2개 이상을 연속해서 사용할 경우, 나란히 옆에 나열된다. (자동 줄 바꿈 처리가 되지 않는다.)
+			- width,height가 적용되지 않는다.
+			
+		4. {display:inline-block;}의 특징
+			- inline과 block의 특징을 반반 갖는다.
+			- 자동 줄바꿈 처리가 되지 않고, 나란히 나열된다.
+			- width, height가 적용된다.
+	-->
+</body>
+
+</html>

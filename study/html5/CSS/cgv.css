@@ -1,0 +1,29 @@
+@charset "uft-8"
+
+body{font-size:12px;background-color:#fdfcf0}/*1*/
+#wrap{width:1000px;margin:0 auto;}/*100*/
+/*헤더영역	*/
+header>h1{padding:50px 0 20px;font-size:15px;}/*2*/
+header>h1+p{font-weight:800;line-height;140%;}/*line-height기본값:120%*//*3*/
+/*본문영역*/
+section{margin:20px 0;}/*1*/
+section>.guide{padding:40px 0;border:1px solid #e1ddd3;border-right:none;border-left:none;}/*11*/
+section>.guide>h3{margin-bottom:20px;color:#764d25;font-size:13px;/*margin-left:30px;==*/;text-indent:30px;}/*12*/
+section>.guide>ul{margin-left:30px;}/*12*/
+section>.guide>ul>li{font-weight:600;line-height:1.6/*==160%*/}/*13*/
+section>.guide>ul>li>span{display:block;text-indent:8px;}/*14*/
+/*푸터영역*/
+/*footer>p>a{display:block;width:160px;height:25px;margin:0 auto;line-height:25px;text-align:center;border:2px solid #727272;border-radius:5px}*/
+/*{margin:0 auto} : 가로폭이 고정수치일 때 의미가 있음.*/
+footer>p>button{background:none;border:none;box-sizing:content-box;padding:0;display:block;width:160px;height:25px;margin:0 auto;line-height:25px;text-align:center;border:2px solid #727272;border-radius:5px}/*3*/
+/*button을 스타일링할 때는 built in CSS 초기화.*/
+section>.contact{margin-top:30px;}/*11*/
+section>.contact>h3{font-size:13px;text-indent:30px;margin-bottom:20px;}/*12*/
+section>.contact>div{margin:0 15px 20px;padding:20px;border:1px solid #e1ddd3;}/*12*/
+section>.contact>div>ul{}/*13*/
+section>.contact li{line-height:15px;}/*12*/
+section>.contact>div>p{margin-top:20px;font-weight:900px;}/*13*/
+/*height와 line-height를 꼭 같이 써야 하는가? - 꼭 그럴 필요 없으나, height값을 주고 line-height값을 설정해 중앙에 온다는 것을 확인시키고자 연습차원에서 사용.*/
+/*문맥선택자 - 자손을 선택할 때 사용. 한 칸 공백으로 표현함. ※선택 시 중복되는 요소를 반드시 확인하며 신중히, 문제가 없다는 것이 확실할 때 사용※ 자주쓰지않는다.*/
+section>.contact>p{/*margin-top:20px;*/ margin-left:15px;margin-bottom:20px;margin-left:20px;padding:20px 0 20px 20px;line-height:15px;border:1px solid #e1ddd3}
+/*p의 margin-top값 : h3(margin-bottom:20px)와 margin통합현상 발생하므로, 의미가 없다.*//*12*/

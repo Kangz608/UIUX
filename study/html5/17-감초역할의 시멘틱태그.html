@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>감초역할의 시멘틱태그</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+		abbr{text-decoration: none;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<h1>여러가지 시멘틱 태그의 사용법</h1>
+	<!--BUILT IN CSS h1{diplay:box;font-weight:800;font-size:34px}-->
+	<dl>
+		<dt>&lt;strong&gt;</dt>
+		<dd>강하게 <strong>중요성을 강조</strong>하고 싶을 때.</dd>
+		<!--BUILT IN CSS stong{diplay:inline;font-weight:600;}-->
+		<dt>&lt;em&gt;</dt>
+		<dd>중요하긴 하지만 <em>strong보다 덜 중요</em>할 때.</dd>
+		<!--BUILT IN CSS em{display:inline;font-style:italic}-->
+		<dt>&lt;cite&gt;</dt>
+		<dd>출판물의 제목 또는 웹사이트의 주소를 나타낼 때</dd>
+		<dd><cite>http://www.google.com</cite></dd>
+		<!--BUILT IN CSS cite{display:inline;font-style:italic}-->
+		<dt>&lt;code&gt;</dt>
+		<dd>프로그래밍 코드를 나타낼 때</dd>
+		<dd><code>var i = 0;</code></dd>
+		<dt>&lt;address&gt;</dt>
+		<dd>주소나 저작권 등을 표현할 때</dd>
+		<dd><address>서울시 서초구 서초동 하이미디어</address></dd>
+		<dd><address>&copy;Designed by 강지은 </address></dd>
+		<!--address{diplay:box;font-style:italic}-->
+		<dt>&lt;abbr&gt;</dt>
+		<dd>줄임말, 약어를 표현할 때</dd>
+		<dd>오늘 우리 <abbr title="미스터 피자">미피</abbr>가자!</dd>
+		<dd>지금은 <abbr title="LongTermEvolution">LTE</abbr>시대 </dd>
+		<dt>&lt;sub&gt;</dt>
+		<dd>아래첨자를 표현할 때.</dd>
+		<dd>log<sub>10</sub>5</dd>
+		<dt>&lt;sup&gt;</dt>
+		<dd>윗첨자를 표현할 때.</dd>
+		<dd>3<sup>2</sup></dd>
+		<dt>&lt;time&gt;</dt>
+		<dd>날짜, 시간정보를 문서에 표현할 때.</dd>
+		<dd><time datetime="2018-7-18-T10:00">이천일십팔년 칠월 십팔일 열시</time></dd>
+	</dl>
+</div>
+</body>
+
+</html>

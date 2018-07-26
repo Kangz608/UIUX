@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>시멘틱테이블 완전체</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+		*{margin=0;padding:0}
+		h1{height:70px;line-height:70px;text-align: center;}
+		table{width:500px;margin: 0 auto;border-collapse: collapse;}
+		th{height:40px;border:1px solid black;}
+		/*높이값을 지정하지 않을 경우 컨텐츠 양만큼 설정됨.*/
+		td{height:40px;border:1px solid black;text-align: center;}
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<h1>모바일 시장점유율</h1>
+	<table>
+		<caption>최근 2년간 전세계 시장점유율</caption><!--웹 접근성을 올려준다.(표에 대한 설명) / 테이블 전체에 대한 제목이나 요약된 한 문장-->
+		<colgroup><!--th나 td에서 반복되는 CSS속성값 중 width,background-color를 여기에 적용함으로써 한 곳에서 통제할 수 있다. 다른CSS속성은 적용불가.-->
+			<col style="width:20%;background-color:rosybrown";>
+			<col style="width:40%;";>
+			<col style="width:40%";>
+		</colgroup>
+		<thead>
+		<!--테이블의 머릿말에 해당되며, 보통은 th열제목으로 구성된 집합.-->
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">삼성</th>
+				<th scope="col">애플 </th>
+			</tr>
+		</thead>
+		<tfoot>
+		<!--
+		테이블의 꼬릿말에 해당되며, 수치결과 등 데이터에 대한 결과가 (필요할때만)있을때만 마크업. 웹접근성 측면을 고려해 <tbody>보다 <tfoot>을 먼저 기술한다.만약 tfoot이 필요 없을 경우 마크업하지 않아도 전혀 문제 없다.
+		-->
+			<tr>
+				<th scope="row">총계</th>
+				<td>40&#37;</td>
+				<td>60&#37;</td>
+			</tr>
+		</tfoot>
+		<tbody>
+		<!--테이블의 본문에 해당하는 tr,td요소를 마크업.-->
+			<tr>
+				<th scope="row">2017년</th>
+				<td>45&#37;</td>
+				<td>55&#37;</td>
+			</tr>
+			<tr>
+				<th scope="row">2018년</th>
+				<td>35&#37;</td>
+				<td>65&#37;</td>
+			</tr>
+		</tbody>
+	</table>	
+</div>
+</body>
+
+</html>

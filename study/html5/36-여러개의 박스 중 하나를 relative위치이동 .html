@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title>여러개의 박스 중 하나를 relative위치이동</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+		p{width:120px;height:120px;margin-bottom:10px;line-height:120px;text-align:center;background-color:yellow;}
+		.posbox{position:relative;left:50px;top:70px;background-color:rosybrown;}
+		/*상대위치 지정시 좌표이동의 기준점 - 원래 요소가 위치해 있던 지점*/
+	</style>
+</head>
+
+<body>
+	<p>박스1</p>
+	<p class="posbox">상대위치지정 박스2</p>
+	<p>박스3</p>
+	<p>박스4</p>
+	<p>박스5</p>
+	<p>박스6</p>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+파일명 규칙 : 프로젝트명_카테고리_특징(_기타).*
+예) line_msg_sp_ico(_20180713).*
+
+자주쓰는 네이밍 예약어
+
+navigation - nav
+menu - mnu
+tab menu - tab
+title - tit, h
+text - tx
+index - idx
+grouping(영역)-group,area
+update - updt
+upload - upld
+download-dnld
+on/off(켜짐/꺼짐)
+register - reg
+reply - repl
+edit - edt
+delete - del
+search - srch
+find - fnd
+more(더보기)
+list(목록)
+paging(페이징) - 페이지넘버
+indicator(지시자), pagenation(페이지네이션)
+best(베스트)
+new(신규)
+read(읽기)
+write - wrt
+open - opn
+close - clse
+blind,hide (숨김)
+lock - lc
+permition - pmit (허용)
+arrow - arr (화살표)
+previous -  prev (이전)
+next (다음)
+first - frst
+last(마지막)
+over - ovr
+top
+bottom - btm
+up 
+down - dn
+submit - smit (전송)
+button - btn
+go(가기)
+radio button - input_rdo
+check box - input_chk
+text feild - input_txt
+confirm - cfm
+ok(완료)
+cancel - cncl
+zoom in - zin
+zoom out - zout
+vaticl - vt 수직
+horizental - hr 수평
+중앙(수직) mid
+중앙(수평) center - cen
+wrap,wrapper,container (감싸다)
+문단 p
+내용 content - cont
+설명 desc,dsc
+해제 clear - cl
+오른쪽 right - rgt
+왼쪽 left - lft
+오른쪽 위 right top - rt
+왼쪽 하단 left bottom - lb
+photo - pht
+액자 frame
+썸네일 thmb,thumb
+image - img
+경로 - path
+광고 - ad
+아이콘 - ico
+동영상 - mov
+재생 - play
+stop - stp
+bullet image (동그란이미지) - bu
+별 star
+banner - banr
+점 dot
+선 line
+install - inst
+압축 zip
+파일 file
+number - num,no
+layer - ly
+마스크 mask
+background - bg
+slash - sl
+back slash - bsl
+refresh - rfsh
+sprite (관련있는 것을 모아둔 것) - sp
+임시 temp,tmp
+fold - fd
+unfold - unfd
+korean - ko,kr
+english - eng,en
+japanese - jp
+chinese - cn
+section - sect
+외톨이영역 - aside
+메인메뉴 global navigation bar - gnb
+서브메뉴 local navigation bar - lnb
+spot navigation bar - snb
+top navigation bar - tnb
+footer navigation bar - fnb
+

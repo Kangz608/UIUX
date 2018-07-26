@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+ <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+		html,body{height:100%}
+		div#wrap{width:1024px;height:100%;margin:0 auto;background-color:seagreen;line-height:500px;text-align:center;}/*와이 PC*/
+		
+		@media screen and (max-width:1200px){div#wrap{width:970px;background-color:#0f0}}/*접속장치가 screen이 달려있고, 폭이<==1199px 일반PC*/
+		
+		@media screen and (max-width:992px){div#wrap{width:750px;background-color:pink}}/*태블릿*/
+		
+		@media screen and (max-width:768px){div#wrap{width:600px;background-color:skyblue}}/*스마트폰*/
+	
+		
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<span id="width">1200</span> x <span id="height">800</span>
+</div>
+<script>
+	window.onload = function(){
+		document.getElementById("width").innerHTML = screen.width;
+		document.getElementById("height").innerHTML = screen.height;
+	}
+</script>
+</body>
+
+</html>
