@@ -33,7 +33,7 @@ section>h2{margin-bottom:25px;color:#000;font-weight:800;font-size:25px;}
 section>p{font-size:14px;line-height:1.5;*zoom:1;}
 section>p:after{display:block;clear:both;content:""}
 section>p>span.frame{display:block;overflow:hidden;float:right;width:300px;margin:5px 0 5px 5px;border-radius:5px;box-shadow:3px 3px 3px #aaa;}
-section>p>.frame>img{display:block;width:100%;}
+section>p>.frame>img{display:block;width:100%;} 
 /*
 	img밑에 약간 뜨는 현상 해결방법
 	1) img{display:block}

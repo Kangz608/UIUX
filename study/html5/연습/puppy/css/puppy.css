@@ -1,0 +1,199 @@
+/*@charset "utf-8";
+
+#wrap{position:relative;width:600px;margin:0 auto;}
+footer{position:absolute;left:0;top:665px;width:600px;height:80px;}
+footer>address{color:#fff;font-size:16px;line-height:80px;text-align:center;background-color:#333;}
+section{position:absolute;left:0;top:130px;padding:10px;border:5px solid #333;}
+section>h2{margin:20px 0 30px;color:black;font-weight:800;font-size:25px;}
+section>p{font-size:14px;line-height:150%;*zoom:1}
+section>p:after{display:block;clear:both;content:"";}
+section>p>.frame{float:right;display:block;width:300px;height:200px;text-indent:-9999px;background-image:url(../images/puppy_4.jpg);background-size:cover;background-repeat:no-repeat;box-shadow:3px 3px 3px gray;}
+section>p>.frame>img{display:block;width:100%;}
+header{position:absolute;left:0;top:30px;width:600px;height:100px;color:#fff;background-color:#069;}
+header>h1{position:absolute;left:10px;top:40px;font-weight:800;font-size:30px}
+header>nav{position:absolute;left:180px;top:30px;width:400px;}
+header>nav>.gnb{*zoom:1;}
+header>nav>.gnb:after{display:block;clear:both;content:"";}
+header>nav>.gnb>li{float:left;width:80px;height:50px;line-height:50px;letter-spacing:1px;text-align:center;}
+header>nav>.gnb>li>a{color:#fff;font-size:16px}
+header>nav>.gnb>li>a:hover{color:#ff0;font-weight:600}
+header>nav>.gnb>li:nth-child(3)>a{color:#ff0;font-weight:600}*/
+
+
+@charset "utf-8";
+
+/*
+   키포인트
+
+   #wrap에게 pos:relative 를 주고
+   그 자식인 header, section, footer를 
+  적당한 위치로 좌표계산을 해서 pos:absolute 한다.
+*/
+
+#wrap{
+   position:relative;
+   width:600px;
+   height:710px;/*헤더100, 섹션530, 푸터80*/
+   margin:0 auto;
+   background-color:#333;
+}
+
+header{
+   position:absolute;
+   left:0;
+   top:0;
+   width:100%;
+   height:100px;
+   background-color:#069;
+}
+
+header>h1{
+   position:absolute;
+   left:30px;
+   top:40px;
+   color:#fff;
+   font-size:30px;
+}
+
+header>nav{
+   position:absolute;
+   left:240px;
+   top:45px;
+/*   outline:1px solid red;*/
+   
+}
+
+header>nav>.gnb{
+   width:260px;
+   *zoom:1;
+}
+
+header>nav>.gnb:after{
+   display:block;
+   clear:both;
+   content:'';
+}
+
+header>nav>.gnb>li{
+   width:65px;
+   float: left;
+}
+
+header>nav>.gnb>li>a{/* 5점 */
+   display:block;
+   height:20px;
+   color:#fff;
+   line-height:20px;
+   text-align:center;
+}
+
+/* nth-child() 는 친형제 관계에서만 성립 */
+header>nav>.gnb>li:nth-child(3)>a,
+header>nav>.gnb>li:hover>a{
+   color:#ff0;
+   font-weight:800;
+   text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+}
+
+
+section{
+   position:absolute;
+   left:5px;
+   top:100px;
+   width:570px;
+   height:490px;
+   padding:30px 10px 10px 10px;   
+   background-color:#fff;
+}
+
+section>h2{
+   margin-bottom:25px;
+   color:#000;
+   font-size:25px;
+}
+
+section>p{
+   font-size:14px;
+   line-height:1.5;/*150%*/
+   *zoom:1;
+}
+
+section>p:after{
+   display:block;
+   clear:both;
+   content:'';
+}
+
+section .frame{
+   display:block;
+   float:right;
+   width:300px;
+   height:200px;
+   margin:5px 0 5px 5px;
+   text-indent:-9999px;
+   background-image:url(../images/puppy_1.jpg);
+   background-size:cover;
+   border-radius:5px;
+   box-shadow:3px 3px 3px #aaa;
+}
+
+
+
+footer{
+   position:absolute;
+   width:100%;
+   left:0;
+   bottom:0;
+}
+
+footer>address{
+   height:80px;
+   color:#fff;
+   font-weight:800;
+   font-size:16px;
+   line-height:80px;
+   text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
